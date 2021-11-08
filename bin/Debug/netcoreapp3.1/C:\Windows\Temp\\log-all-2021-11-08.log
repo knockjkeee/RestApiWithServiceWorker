@@ -1,0 +1,15 @@
+2021-11-08 17:28:29.8093|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 17:28:31.0977|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 17:28:31.1116|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 17:28:31.1182|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 17:28:31.1182|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 17:28:31.1192|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 17:28:38.2650|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 17:29:57.2922|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 17:29:57.8695|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 17:29:57.8800|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 17:29:57.8851|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 17:29:57.8860|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 17:29:57.8860|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 17:30:09.9234|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 17:36:39.4365|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
