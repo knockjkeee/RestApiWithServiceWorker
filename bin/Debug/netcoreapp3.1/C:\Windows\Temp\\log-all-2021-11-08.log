@@ -29,3 +29,213 @@
 2021-11-08 21:06:04.1218|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
 2021-11-08 21:06:11.9064|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
 2021-11-08 21:07:22.9986|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:34:25.8469|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:34:26.4313|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:34:26.4399|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:34:26.4444|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:34:26.4450|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:34:26.4450|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:34:43.1048|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:35:25.5198|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:35:32.9475|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:35:33.4721|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:35:33.4824|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:35:33.4873|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:35:33.4880|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:35:33.4880|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:35:38.7441|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:35:56.4102|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:36:00.9408|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:36:01.4449|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:36:01.4560|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:36:01.4609|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:36:01.4609|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:36:01.4609|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:36:06.2773|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:37:22.5345|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:37:30.0479|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:37:30.5685|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:37:30.5801|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:37:30.5863|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:37:30.5871|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:37:30.5871|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:37:33.6212|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:37:33.6299|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: RestApiWithServiceWorker.Domain.MessageResponse 
+2021-11-08 21:37:57.8540|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:37:57.8662|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: RestApiWithServiceWorker.Domain.MessageResponse 
+2021-11-08 21:38:02.6909|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:38:09.7395|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:38:10.2601|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:38:10.2697|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:38:10.2753|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:38:10.2753|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:38:10.2764|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:38:12.9593|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:38:12.9684|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: RestApiWithServiceWorker.Domain.MessageResponse 
+2021-11-08 21:45:45.4723|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:45:54.7961|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:45:55.3755|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:45:55.3872|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:45:55.3933|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:45:55.3941|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:45:55.3941|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:45:58.2122|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:45:58.2213|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest:  AccesKey:  uuid:  File:  Fname:  url:  Attr:  
+2021-11-08 21:47:59.2677|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:48:07.0744|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:48:07.5969|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:48:07.6071|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:48:07.6138|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:48:07.6150|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:48:07.6155|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:48:10.3147|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:48:10.3240|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest:  AccesKey:  uuid:  File:  Fname:  url:  Attr:  
+2021-11-08 21:49:13.8889|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:49:13.9030|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest:  AccesKey:  uuid:  File:  Fname:  url:  Attr:  
+2021-11-08 21:49:22.4681|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:49:22.4787|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 21:50:02.9196|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:50:10.5149|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:50:11.0417|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:50:11.0535|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:50:11.0586|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:50:11.0586|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:50:11.0597|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:50:16.3465|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApiDemo is running... 
+2021-11-08 21:50:16.3562|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 21:51:47.7863|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 21:51:55.2101|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 21:51:55.7318|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 21:51:55.7423|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 21:51:55.7471|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 21:51:55.7478|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 21:51:55.7478|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 21:52:03.0582|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 21:52:03.0676|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:02:25.4517|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:02:33.4572|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:02:33.9856|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:02:33.9967|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:02:34.0025|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:02:34.0032|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:02:34.0032|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:02:47.5504|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Endpoint RestApiWithServiceWorker.Controller.HomeController.GetParams (RestApiWithServiceWorker) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+2021-11-08 22:03:10.5050|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:04:57.0212|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:04:57.5878|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:04:57.6001|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:04:57.6061|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:04:57.6069|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:04:57.6075|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:05:06.0371|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Endpoint RestApiWithServiceWorker.Controller.HomeController.GetParams (RestApiWithServiceWorker) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+2021-11-08 22:06:12.8742|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:06:20.6413|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:06:21.2065|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:06:21.2156|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:06:21.2212|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:06:21.2221|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:06:21.2226|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:06:26.0257|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:06:26.0365|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:09:39.4815|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:09:47.3178|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:09:47.8673|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:09:47.8765|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:09:47.8819|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:09:47.8819|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:09:47.8831|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:11:13.3900|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:11:13.4000|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:11:24.2238|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:13:19.1881|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:13:19.7389|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:13:19.7498|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:13:19.7557|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:13:19.7568|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:13:19.7578|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:13:29.8127|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:13:29.8228|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest:  AccesKey:  uuid:  File:  Fname:  url:  Attr:  
+2021-11-08 22:13:38.9582|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:13:38.9695|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:31:01.0090|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:38:13.6827|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:38:14.2515|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:38:14.2616|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:38:14.2669|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:38:14.2669|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:38:14.2669|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:38:20.9471|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:38:20.9572|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:38:53.7354|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:38:53.7477|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:39:33.6036|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:39:41.0367|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:39:41.6301|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:39:41.6400|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:39:41.6454|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:39:41.6459|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:39:41.6459|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:39:48.6554|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:39:48.6656|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:42:01.6000|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:44:44.2537|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:44:44.8918|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:44:44.9020|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:44:44.9069|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:44:44.9069|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:44:44.9076|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:44:50.9123|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:44:50.9224|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:55:15.1073|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:56:19.7541|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:56:20.3383|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:56:20.3473|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:56:20.3541|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:56:20.3541|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:56:20.3549|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:56:49.8051|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:56:57.1038|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:56:57.6718|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:56:57.6813|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:56:57.6864|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:56:57.6864|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:56:57.6874|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:57:23.9761|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|WARN|Failed to determine the https port for redirect. 
+2021-11-08 22:57:24.1827|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:57:24.1850|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:57:42.1036|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:57:49.6528|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:57:50.2125|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:57:50.2232|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:57:50.2295|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:57:50.2303|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:57:50.2315|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:57:53.7952|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:57:53.8077|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 22:58:57.9938|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 22:59:02.9292|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 22:59:03.4666|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 22:59:03.4733|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 22:59:03.4784|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 22:59:03.4793|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 22:59:03.4793|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 22:59:13.8709|RestApiWithServiceWorker.Controller.HomeController|INFO|WindowsServiceApi is running... 
+2021-11-08 22:59:13.8807|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 23:00:14.5022|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 23:01:38.4620|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 23:01:39.0197|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 23:01:39.0297|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 23:01:39.0349|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 23:01:39.0349|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 23:01:39.0349|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 23:01:41.4289|RestApiWithServiceWorker.Controller.HomeController|INFO|messageResponse: Rest: add-file AccesKey: 57cb0c68-1998-481e-a4e2-fdec8afdec36 uuid: serviceCall$1615707 File: tmp6B73.tmp Fname: scan_9.pdf url: http://192.168.246.76:8080/sd Attr:  
+2021-11-08 23:02:03.8089|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2021-11-08 23:02:11.8046|RestApiWithServiceWorker.Program|DEBUG|init main 
+2021-11-08 23:02:12.3658|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-08 23:02:12.3742|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-08 23:02:12.3807|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-08 23:02:12.3814|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-08 23:02:12.3814|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-08 23:03:21.8297|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 

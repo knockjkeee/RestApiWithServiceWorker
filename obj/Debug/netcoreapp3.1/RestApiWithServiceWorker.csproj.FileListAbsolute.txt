@@ -7,7 +7,6 @@
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/RestApiWithServiceWorker.dll
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/RestApiWithServiceWorker.pdb
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/RestApiWithServiceWorker.Views.dll
-/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/RestApiWithServiceWorker.Views.pdb
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Hosting.WindowsServices.dll
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
 /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
