@@ -3,8 +3,6 @@ using Microsoft.Extensions.Logging;
 using WorkerService;
 using System;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace RestApiWithServiceWorker.Controller
 {
     [ApiController]
@@ -25,7 +23,7 @@ namespace RestApiWithServiceWorker.Controller
             Worker.ApiCommand = apiCommand;
             _logger.LogInformation(RunningMessage());
             //Console.WriteLine(RunningMessage());
-            
+
             return RunningMessage();
         }
     }
