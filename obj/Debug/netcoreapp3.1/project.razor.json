@@ -14400,42 +14400,6 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "RestApiWithServiceWorker",
-  "Documents": [
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/Shared/_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/Pages/_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }

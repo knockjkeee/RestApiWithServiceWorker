@@ -1,10 +1,11 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System.Net.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using RestApiWithServiceWorker.Controller;
+using RestApiWithServiceWorker.Service;
 
 namespace RestApiWithServiceWorker
 {
@@ -13,6 +14,8 @@ namespace RestApiWithServiceWorker
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            // var builder = new ConfigurationBuilder().AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "Properties", "launchSettings.json"));
+            // Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -20,12 +23,13 @@ namespace RestApiWithServiceWorker
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // services.AddSingleton<IConfiguration>(Configuration);
             services.AddCors(options =>
                         {
-                            options.AddPolicy("foo",
+                            options.AddPolicy("innerPolicy",
                             builder =>
                             {
-                                // Not a permanent solution, but just trying to isolate the problem
                                 builder
                                 .AllowAnyOrigin()
                                 .AllowAnyMethod()
@@ -34,7 +38,7 @@ namespace RestApiWithServiceWorker
                         });
 
             services.AddControllers();
-            services.AddHealthChecks().AddCheck<HealthCheck>("health_check");
+            services.AddHealthChecks().AddCheck<HealthCheckService>("health_check");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +59,7 @@ namespace RestApiWithServiceWorker
 
             app.UseRouting();
 
-            app.UseCors("foo");
+            app.UseCors("innerPolicy");
 
             app.UseAuthorization();
 

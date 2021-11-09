@@ -15,9 +15,8 @@ namespace RestApiWithServiceWorker
             NLog.Logger logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             try
             {
-                logger.Debug("init main");
-                //Console.WriteLine("init main");
-                CreateHostBuilder(args).Build().Run();
+                // logger.Debug("init main");
+                CreateHostBuilder(args).Build().RunAsync();
             }
             catch (Exception e)
             {
@@ -47,8 +46,6 @@ namespace RestApiWithServiceWorker
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
-
-
                 })
                 .UseNLog()
                 .UseWindowsService();

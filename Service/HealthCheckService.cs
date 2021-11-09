@@ -3,11 +3,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace RestApiWithServiceWorker.Controller
+namespace RestApiWithServiceWorker.Service
 {
-    public class HealthCheck : IHealthCheck
+    public class HealthCheckService : IHealthCheck
     {
-        public HealthCheck()
+        public HealthCheckService()
         {
         }
 

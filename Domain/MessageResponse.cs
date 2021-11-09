@@ -10,7 +10,7 @@ namespace RestApiWithServiceWorker.Domain
         public string Fname { get; set; }
         public string Url { get; set; }
 
-        public string Attr { get; set; }
+        public string Attr { get; set; } = "";
 
         public override string ToString()
         {

@@ -9,10 +9,10 @@ namespace RestApiWithServiceWorker.Controller
     [Route("Command/{apiCommand}")]
     public class CommandController : ControllerBase
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HandlesController> _logger;
         private string RunningMessage() => $"apiCommand: {Worker.ApiCommand}";
 
-        public CommandController(ILogger<HomeController> logger)
+        public CommandController(ILogger<HandlesController> logger)
         {
             _logger = logger;
         }
