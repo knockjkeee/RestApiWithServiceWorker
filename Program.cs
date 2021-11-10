@@ -16,7 +16,7 @@ namespace RestApiWithServiceWorker
             try
             {
                 // logger.Debug("init main");
-                CreateHostBuilder(args).Build().RunAsync();
+                CreateHostBuilder(args).Build().Run();
             }
             catch (Exception e)
             {
@@ -35,7 +35,7 @@ namespace RestApiWithServiceWorker
                 {
                     logging.ClearProviders();
                     logging.SetMinimumLevel(LogLevel.Trace);
-                    logging.AddConsole();
+                    // logging.AddConsole();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

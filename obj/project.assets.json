@@ -1264,7 +1264,7 @@
       "outputPath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/knockjkeee/.config/NuGet/NuGet.Config"
+        "/Users/knockjkeee/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
