@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RestApiWithServiceWorker.Domain;
 using System.Threading.Tasks;
@@ -24,24 +25,32 @@ namespace RestApiWithServiceWorker.Controller
         [HttpGet]
         public string GetParam([FromQuery] MessageResponse messageResponse)
         {
-            commonsUtilst.printConsoleAndLogFile("messageResponse", messageResponse);
-
-            //Create url Naumen from request ja form
+            //Create url Naumen from request js form
+            // method show params js request commonsUtilst.printConsoleAndLogFile("messageResponse", messageResponse);
             string urlToRequestNaumen = commonsUtilst.createUrl(messageResponse); ;
 
             // string pathTempDir = Environment.GetEnvironmentVariable("TMPDIR") + messageResponse.File;
             string pathTempDir = "C:\\Windows\\Temp\\" + messageResponse.File;
 
+            // wait save to local storage
+            Thread.Sleep(2000);
+
             byte[] resultBuff = commonsUtilst.getByteLocalFile(pathTempDir);
+
             if (resultBuff.Length > 0)
             {
                 Task<string> task = commonsUtilst.Upload(resultBuff, urlToRequestNaumen, messageResponse, pathTempDir);
-                System.Console.WriteLine(task.Result);
+                commonsUtilst.printConsoleAndLogFile("Response Naumen:", task.Result);
+                //log
+
+                //TODO
+                // PrintLog();
+
+                commonsUtilst.PrintLog(messageResponse, resultBuff);
+
                 return runningMessage;
             }
-
             return "File not exist to path: " + pathTempDir;
         }
-
     }
 }

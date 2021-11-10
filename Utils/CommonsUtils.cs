@@ -23,7 +23,6 @@ namespace Utils
         public void printConsoleAndLogFile(string namelog, object obj)
         {
             _logger.LogInformation(namelog + ": " + obj);
-            // System.Console.WriteLine(namelog + ": " + obj);
         }
 
 
@@ -33,16 +32,6 @@ namespace Utils
             if (File.Exists(pathTempDir))
             {
                 FileStream fs = new FileStream(pathTempDir, FileMode.Open, FileAccess.Read);
-                // FileStream fs = File.OpenRead(pathTempDir);
-                // fs.Name.get
-                // string v = Path.GetExtension(pathTempDir);
-                // Console.WriteLine(v);
-
-                // string contentType = MimeTypeMap.GetMimeType(Path.GetExtension(pathTempDir));
-                // Console.WriteLine(contentType);
-                // // File.Create();
-
-
                 BinaryReader br = new BinaryReader(fs);
                 long numBytes = new FileInfo(pathTempDir).Length;
                 buff = br.ReadBytes((int)numBytes);
@@ -93,5 +82,17 @@ namespace Utils
                 }
             }
         }
+
+        public void PrintLog(MessageResponse messageResponse, byte[] data)
+        {
+            printConsoleAndLogFile("File pushed tpo Naumen SD property", "");
+            printConsoleAndLogFile("File original name", messageResponse.File);
+            printConsoleAndLogFile("File custom name", messageResponse.Fname);
+            printConsoleAndLogFile("File size", data.Length);
+            printConsoleAndLogFile("UUID", messageResponse.Uuid);
+            printConsoleAndLogFile("Method", messageResponse.Rest);
+        }
+
+
     }
 }
