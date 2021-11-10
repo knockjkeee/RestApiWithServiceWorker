@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DH4yyNV+zrHQKDX9SOQWqJ0HzM7l2opqKCHIZ8bImMcVlWx44PZeUN0T7BGxGe2/5Zsa67WeAbBCiQlW6+EB/g==",
+  "dgSpecHash": "TAE3n7O9qKmK0K+gV93c5Hz82yWbIWtDlkxEohbGiRSS2rNDXpfo9rWqHNR0tR9M/xnfTgjhtLAsC8aTTfD41w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\Rostov\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.10\\microsoft.extensions.primitives.3.1.10.nupkg.sha512",
     "C:\\Users\\Rostov\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Rostov\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rostov\\.nuget\\packages\\mimetypemapofficial\\1.0.17\\mimetypemapofficial.1.0.17.nupkg.sha512",
     "C:\\Users\\Rostov\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512",
     "C:\\Users\\Rostov\\.nuget\\packages\\nlog.extensions.logging\\1.6.4\\nlog.extensions.logging.1.6.4.nupkg.sha512",
     "C:\\Users\\Rostov\\.nuget\\packages\\nlog.web.aspnetcore\\4.9.3\\nlog.web.aspnetcore.4.9.3.nupkg.sha512",

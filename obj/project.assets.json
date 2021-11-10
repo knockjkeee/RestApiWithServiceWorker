@@ -382,6 +382,15 @@
           }
         }
       },
+      "MimeTypeMapOfficial/1.0.17": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/MimeTypes.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MimeTypes.dll": {}
+        }
+      },
       "NLog/4.7.2": {
         "type": "package",
         "compile": {
@@ -997,6 +1006,22 @@
         "version.txt"
       ]
     },
+    "MimeTypeMapOfficial/1.0.17": {
+      "sha512": "f6DSQSYTckCjq1ifRj0fSLiEmDv+22uo4+JjTeb3MNZK3Ban1XLjA+bTQtD+/7x2NBEAGzBLYIRpS1IU2OgIAw==",
+      "type": "package",
+      "path": "mimetypemapofficial/1.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypes.dll",
+        "lib/net48/MimeTypes.dll",
+        "lib/netcoreapp2.2/MimeTypes.dll",
+        "lib/netcoreapp3.1/MimeTypes.dll",
+        "lib/netstandard2.0/MimeTypes.dll",
+        "mimetypemapofficial.1.0.17.nupkg.sha512",
+        "mimetypemapofficial.nuspec"
+      ]
+    },
     "NLog/4.7.2": {
       "sha512": "tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
       "type": "package",
@@ -1248,6 +1273,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.AspNetCore.Hosting.WindowsServices >= 3.1.10",
       "Microsoft.Extensions.Hosting.WindowsServices >= 3.1.10",
+      "MimeTypeMapOfficial >= 1.0.17",
       "NLog.Web.AspNetCore >= 4.9.3"
     ]
   },
@@ -1305,6 +1331,10 @@
           "Microsoft.Extensions.Hosting.WindowsServices": {
             "target": "Package",
             "version": "[3.1.10, )"
+          },
+          "MimeTypeMapOfficial": {
+            "target": "Package",
+            "version": "[1.0.17, )"
           },
           "NLog.Web.AspNetCore": {
             "target": "Package",

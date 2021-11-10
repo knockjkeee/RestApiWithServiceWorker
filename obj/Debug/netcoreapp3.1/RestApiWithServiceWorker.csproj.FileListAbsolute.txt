@@ -109,3 +109,4 @@ C:\Users\Rostov\Desktop\Project_C#\RestApiWithServiceWorker\obj\Debug\netcoreapp
 C:\Users\Rostov\Desktop\Project_C#\RestApiWithServiceWorker\obj\Debug\netcoreapp3.1\RestApiWithServiceWorker.dll
 C:\Users\Rostov\Desktop\Project_C#\RestApiWithServiceWorker\obj\Debug\netcoreapp3.1\RestApiWithServiceWorker.pdb
 C:\Users\Rostov\Desktop\Project_C#\RestApiWithServiceWorker\obj\Debug\netcoreapp3.1\RestApiWithServiceWorker.genruntimeconfig.cache
+C:\Users\Rostov\Desktop\Project_C#\RestApiWithServiceWorker\bin\Debug\netcoreapp3.1\MimeTypes.dll

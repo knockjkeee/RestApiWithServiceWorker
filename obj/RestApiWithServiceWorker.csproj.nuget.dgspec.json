@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[3.1.10, )"
             },
+            "MimeTypeMapOfficial": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.9.3, )"
