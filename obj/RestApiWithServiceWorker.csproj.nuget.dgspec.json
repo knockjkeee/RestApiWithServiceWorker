@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/RestApiWithServiceWorker.csproj": {}
+    "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj": {}
   },
   "projects": {
-    "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/RestApiWithServiceWorker.csproj": {
+    "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/RestApiWithServiceWorker.csproj",
+        "projectUniqueName": "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj",
         "projectName": "RestApiWithServiceWorker",
-        "projectPath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/RestApiWithServiceWorker.csproj",
-        "packagesPath": "/Users/knockjkeee/.nuget/packages/",
-        "outputPath": "/Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker/obj/",
+        "projectPath": "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj",
+        "packagesPath": "C:\\Users\\Rostov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rostov\\Desktop\\Project_C#\\RestApiWithServiceWorker\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/knockjkeee/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Rostov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,12 +69,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[3.1.18, 3.1.18]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -75,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
