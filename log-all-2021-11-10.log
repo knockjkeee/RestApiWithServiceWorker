@@ -1,0 +1,6 @@
+2021-11-10 10:49:40.0770|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:8888 
+2021-11-10 10:49:40.1381|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://[::]:1980 
+2021-11-10 10:49:40.1484|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2021-11-10 10:49:40.1496|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2021-11-10 10:49:40.1496|Microsoft.Hosting.Lifetime|INFO|Content root path: /Users/knockjkeee/Projects/RestApiWithServiceWorker/RestApiWithServiceWorker 
+2021-11-10 10:49:44.4747|Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
