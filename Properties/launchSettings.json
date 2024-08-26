@@ -19,7 +19,7 @@
     "RestApiWithServiceWorker": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "home",
+      "launchUrl": "Scanner",
       "applicationUrl": "http://localhost:8888",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

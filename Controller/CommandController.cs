@@ -1,34 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WorkerService;
-using System;
 
 namespace RestApiWithServiceWorker.Controller
 {
     [ApiController]
-    [Route("Command/{apiCommand}")]
-    public class CommandController : ControllerBase
+    [Route("Echo/{apiCommand}")]
+    public class CommandController(ILogger<HandlesController> logger) : ControllerBase
     {
-        private readonly ILogger<HandlesController> _logger;
-        private string RunningMessage() => $"apiCommand: {Worker.ApiCommand}";
-
-        public CommandController(ILogger<HandlesController> logger)
-        {
-            _logger = logger;
-        }
+        private string RunningMessage() => $"Echo: {Worker.ApiCommand}";
 
         [HttpGet]
         public string SetCommand(string apiCommand)
         {
             Worker.ApiCommand = apiCommand;
-            _logger.LogInformation(RunningMessage());
-            //Console.WriteLine(RunningMessage());
-
+            logger.LogInformation(RunningMessage());
             return RunningMessage();
         }
     }
-
-
-
-
 }

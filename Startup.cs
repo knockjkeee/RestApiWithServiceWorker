@@ -1,12 +1,9 @@
-﻿using System.IO;
-using System.Net.Http;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RestApiWithServiceWorker.Service;
-using NLog.Web;
 
 namespace RestApiWithServiceWorker
 {

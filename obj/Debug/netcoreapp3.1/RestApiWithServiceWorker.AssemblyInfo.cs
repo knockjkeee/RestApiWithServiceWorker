@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestApiWithServiceWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93db2b07c772b757e5ac737a9fdf73f44bca74d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestApiWithServiceWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestApiWithServiceWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
@@ -24,7 +23,7 @@ namespace RestApiWithServiceWorker.Service
 
             return Task.FromResult(
                 new HealthCheckResult(context.Registration.FailureStatus,
-                "An unhealthy result."));
+                    "An unhealthy result."));
         }
     }
 }

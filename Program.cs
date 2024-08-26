@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
+using RestApiWithServiceWorker.Domain;
+using RestApiWithServiceWorker.Service;
 using WorkerService;
 
 namespace RestApiWithServiceWorker
@@ -12,10 +14,9 @@ namespace RestApiWithServiceWorker
     {
         public static void Main(string[] args)
         {
-            NLog.Logger logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             try
             {
-                // logger.Debug("init main");
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception e)
@@ -29,7 +30,7 @@ namespace RestApiWithServiceWorker
             }
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        private static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureLogging(logging =>
                 {
@@ -45,10 +46,13 @@ namespace RestApiWithServiceWorker
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
+                    services.AddMvc();
+                    services.AddSingleton<IWiaService, WiaService>();
+                    services.AddSingleton<ISendFileToNaumen, SendFileToNaumen>();
+                    services.AddSingleton<IScanner, Scanner>();
                 })
                 .UseNLog()
                 .UseWindowsService();
-
     }
 }
 

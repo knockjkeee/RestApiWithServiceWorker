@@ -1,0 +1,57 @@
+
+
+@* <h2>Count: @ViewBag.People.Count</h2> *@
+@* <ul> *@
+@*     @foreach (string person in ViewBag.People) *@
+@*     { *@
+@*         <li>@person</li> *@
+@*     } *@
+@* </ul> *@
+
+<h2>Сканирование документов в Naumen</h2>
+
+<form method="post">
+    <p>
+        <label for="scanner">Выберите сканер:</label>
+        <select name="scanner">
+            @foreach (string person in ViewBag.People)
+            {
+                <option>@person</option>
+            }
+        </select>
+    </p>
+    <p>
+        <label>Двухстороннее сканирование:</label>
+        @if (ViewBag.isDuplex)
+        {
+            <input type="checkbox" name="isDuplex" value="true" checked/>
+        }
+        else
+        {
+            <input type="checkbox" name="isDuplex" value="true"/>
+        }
+        <label>Автоподача:</label>
+        @if (ViewBag.isFeeder)
+        {
+            <input type="checkbox" name="isFeeder" value="true" checked/>
+        }
+        else
+        {
+            <input type="checkbox" name="isFeeder" value="true"/>
+        }
+        <label>Auto:</label>
+        @if (ViewBag.isAuto)
+        {
+            <input type="checkbox" name="isAuto" value="true" checked/>
+            <br/>
+            <br/>
+        }
+        else
+        {
+            <input type="checkbox" name="isAuto" value="true"/>
+            <br/>
+            <br/>
+        }
+        <input type="submit" value="Сканировать"/>
+    </p>
+</form>
