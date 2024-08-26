@@ -18,8 +18,6 @@ namespace RestApiWithServiceWorker.Domain;
 public interface IWiaDevices
 {
     Task<List<string>> GetWiaDevices();
-    NAPS2.Wia.WiaDevice GetWiaDeviceByName(string name);
-
     Task Scan(Scanner scanner);
 }
 
@@ -27,7 +25,8 @@ public class WiaDevice : IWiaDevices
 {
     private readonly ILogger<WiaDevice> _logger;
 
-    [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")] private Dictionary<Bitmap, string> data = new Dictionary<Bitmap, string>();
+    [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")] 
+    private Dictionary<Bitmap, string> data = new();
     private Scanner curScanner { get; set; }
 
     public WiaDevice(ILogger<WiaDevice> logger)
@@ -81,6 +80,8 @@ public class WiaDevice : IWiaDevices
     [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")]
     public async Task Scan(Scanner scanner)
     {
+        data.Clear();
+        
         var curWIA = GetWiaDeviceByName(scanner.Name);
 
         if (curWIA == null)
@@ -123,7 +124,7 @@ public class WiaDevice : IWiaDevices
         transfer.PageScanned += PageScanned;
         transfer.TransferComplete += TransferComplete;
 
-        transfer.Download();
+        // transfer.Download();
 
         try
         {
@@ -157,7 +158,7 @@ public class WiaDevice : IWiaDevices
 
                 var random = new Random();
                 var path = Path.Combine(Path.GetTempPath(),
-                    "naumen" + DateTime.Now + "_tempoScanner" + random.Next(2, 1000) + imageExtension);
+                    "naumen" + (int)DateTime.Now.TimeOfDay.TotalMilliseconds + "_tempoScanner" + random.Next(2, 1000) + imageExtension);
 
                 bitmap.Save(path, format);
                 data?.Add(bitmap, path);
@@ -208,7 +209,7 @@ public class WiaDevice : IWiaDevices
             page.Close();
         }
 
-        var path = Path.Combine(Path.GetTempPath(), "naumen", DateTime.Now.ToString(), ".pdf");
+        var path = Path.Combine(Path.GetTempPath(), "naumen", DateTime.Now.Millisecond.ToString() , ".pdf");
         if (File.Exists(path))
             File.Delete(path);
         pdfDocument.Save(path);

@@ -29,6 +29,9 @@
                 <option>jpeg</option>
             </select>
 
+            <br/>
+            <br/>
+
             <label>Двухстороннее сканирование:</label>
             @if (ViewBag.isDuplex)
             {
@@ -38,6 +41,7 @@
             {
                 <input type="checkbox" name="isDuplex" value="true"/>
             }
+
             <label>Автоподача:</label>
             @if (ViewBag.isFeeder)
             {
@@ -47,19 +51,20 @@
             {
                 <input type="checkbox" name="isFeeder" value="true"/>
             }
-            <label>Auto:</label>
-            @if (ViewBag.isAuto)
-            {
-                <input type="checkbox" name="isAuto" value="true" checked/>
-                <br/>
-                <br/>
-            }
-            else
-            {
-                <input type="checkbox" name="isAuto" value="true"/>
-                <br/>
-                <br/>
-            }
+            <br/>
+            @* <label>Auto:</label> *@
+            @* @if (ViewBag.isAuto) *@
+            @* { *@
+            @*     <input type="checkbox" name="isAuto" value="true" checked/> *@
+            @*     <br/> *@
+            @*     <br/> *@
+            @* } *@
+            @* else *@
+            @* { *@
+            @*     <input type="checkbox" name="isAuto" value="true"/> *@
+            @*     <br/> *@
+            @*     <br/> *@
+            @* } *@
 
             <input type="submit" value="Сканировать"/>
 
@@ -69,14 +74,4 @@
     {
         <h3>Устройства для сканирования не найдены.</h3>
     }
-
-
-    @* @if (ViewBag.Scanner.Count > 0) *@
-    @* { *@
-    @* <input type="submit" value="Сканировать"/> *@
-    @* } *@
-    @* else *@
-    @* { *@
-    @* <h3>Устройства для сканирования не найдены.</h3> *@
-    @* } *@
 </form>

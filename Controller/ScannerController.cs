@@ -24,10 +24,9 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
     public async Task<IActionResult> Index()
     {
         var data = await WiaService.GetData();
-        ViewBag.Scanner = data ?? [];
-        ViewBag.isDuplex = true;
-        ViewBag.isFeeder = true;
-        ViewBag.isAuto = true;
+        ViewBag.Scanner = data ?? new List<string>(){};
+        ViewBag.isDuplex = false;
+        ViewBag.isFeeder = false;
         return View();
     }
 
