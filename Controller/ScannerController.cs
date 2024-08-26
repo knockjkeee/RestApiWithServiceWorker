@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RestApiWithServiceWorker.Domain;
 using RestApiWithServiceWorker.Service;
 
 namespace RestApiWithServiceWorker.Controller;
@@ -9,8 +10,8 @@ namespace RestApiWithServiceWorker.Controller;
 public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 {
     private IWiaService WiaService { get; set; }
-    
-    private readonly ILogger<ScannerController> _logger; 
+
+    private readonly ILogger<ScannerController> _logger;
 
     public ScannerController(IWiaService wiaService, ILogger<ScannerController> logger)
     {
@@ -22,7 +23,8 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        ViewBag.People = await WiaService.GetData();
+        var data = await WiaService.GetData();
+        ViewBag.Scanner = data ?? [];
         ViewBag.isDuplex = true;
         ViewBag.isFeeder = true;
         ViewBag.isAuto = true;
@@ -31,11 +33,22 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 
 
     [HttpPost]
-    public async Task<IActionResult> Index(string scanner, bool isDuplex, bool isFeeder, bool isAuto)
+    public async Task<IActionResult> Index(string scanner, string format, bool isDuplex, bool isFeeder, bool isAuto)
     {
-        // return $"Scanner is {scanner}\risDuplex: {isDuplex}\risFeeder: {isFeeder}\risAuto: {isAuto}";
-        await Task.Delay(1);
-        _logger.LogInformation($"Scanner is {scanner} isDuplex: {isDuplex} isFeeder: {isFeeder} isAuto: {isAuto}");
+        _logger.LogInformation(
+            $"Переданы следующие настройки - Scanner: {scanner}, format: {format}, isDuplex: {isDuplex}, isFeeder: {isFeeder}, isAuto: {isAuto}");
+
+        var sc = new Scanner()
+        {
+            Name = scanner,
+            isDuplex = isDuplex,
+            IsFeeder = isFeeder,
+            IsAuto = isAuto,
+            Format = format
+        };
+
+        await WiaService.Scan(sc);
+
         return Redirect("~/Scanner");
     }
 }

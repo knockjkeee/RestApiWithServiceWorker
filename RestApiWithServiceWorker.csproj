@@ -18,5 +18,6 @@
     <PackageReference Include="NAPS2.Wia" Version="2.0.3" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
     <PackageReference Include="PDFsharp" Version="6.2.0-preview-1" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.0-preview.7.24405.4" />
   </ItemGroup>
 </Project>

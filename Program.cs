@@ -49,7 +49,7 @@ namespace RestApiWithServiceWorker
                     services.AddMvc();
                     services.AddSingleton<IWiaService, WiaService>();
                     services.AddSingleton<ISendFileToNaumen, SendFileToNaumen>();
-                    services.AddSingleton<IScanner, Scanner>();
+                    services.AddSingleton<IWiaDevices, WiaDevice>();
                 })
                 .UseNLog()
                 .UseWindowsService();

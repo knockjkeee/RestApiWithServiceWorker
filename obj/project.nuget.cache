@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kX7ZS9sjUelUbHna+ekk124lYJyYj5oyZQCEsNJb/lSIfOmUzeIkT11lJbD6CcyQ1BjD4+ritS/6jNN69ZTddw==",
+  "dgSpecHash": "zpzDjxqqxZ25H5Yn5PlelEyJ9OvDHAggeLR7lnto1RfOyNhZh97b8+xpLwq1tjfNkkj0PLnoLF4TBT5F0nPm9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\rostov\\RiderProjects\\RestApiWithServiceWorker\\RestApiWithServiceWorker.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\rostov\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\rostov\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0-preview.7.24405.7\\microsoft.win32.systemevents.9.0.0-preview.7.24405.7.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\mimetypemapofficial\\1.0.17\\mimetypemapofficial.1.0.17.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\naps2.wia\\2.0.3\\naps2.wia.2.0.3.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512",
@@ -40,6 +41,7 @@
     "C:\\Users\\rostov\\.nuget\\packages\\nlog.web.aspnetcore\\4.9.3\\nlog.web.aspnetcore.4.9.3.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\pdfsharp\\6.2.0-preview-1\\pdfsharp.6.2.0-preview-1.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\system.diagnostics.eventlog\\4.7.0\\system.diagnostics.eventlog.4.7.0.nupkg.sha512",
+    "C:\\Users\\rostov\\.nuget\\packages\\system.drawing.common\\9.0.0-preview.7.24405.4\\system.drawing.common.9.0.0-preview.7.24405.4.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\rostov\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512",

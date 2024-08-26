@@ -1,5 +1,3 @@
-
-
 @* <h2>Count: @ViewBag.People.Count</h2> *@
 @* <ul> *@
 @*     @foreach (string person in ViewBag.People) *@
@@ -14,44 +12,71 @@
     <p>
         <label for="scanner">Выберите сканер:</label>
         <select name="scanner">
-            @foreach (string person in ViewBag.People)
+            @foreach (string scanner in ViewBag.Scanner)
             {
-                <option>@person</option>
+                <option>@scanner</option>
             }
         </select>
+
     </p>
-    <p>
-        <label>Двухстороннее сканирование:</label>
-        @if (ViewBag.isDuplex)
-        {
-            <input type="checkbox" name="isDuplex" value="true" checked/>
-        }
-        else
-        {
-            <input type="checkbox" name="isDuplex" value="true"/>
-        }
-        <label>Автоподача:</label>
-        @if (ViewBag.isFeeder)
-        {
-            <input type="checkbox" name="isFeeder" value="true" checked/>
-        }
-        else
-        {
-            <input type="checkbox" name="isFeeder" value="true"/>
-        }
-        <label>Auto:</label>
-        @if (ViewBag.isAuto)
-        {
-            <input type="checkbox" name="isAuto" value="true" checked/>
-            <br/>
-            <br/>
-        }
-        else
-        {
-            <input type="checkbox" name="isAuto" value="true"/>
-            <br/>
-            <br/>
-        }
-        <input type="submit" value="Сканировать"/>
-    </p>
+
+    @if (ViewBag.Scanner.Count > 0)
+    {
+        <p>
+            <label for="format">Формат сканирования:</label>
+            <select name="format">
+                <option>png</option>
+                <option>jpeg</option>
+            </select>
+
+            <label>Двухстороннее сканирование:</label>
+            @if (ViewBag.isDuplex)
+            {
+                <input type="checkbox" name="isDuplex" value="true" checked/>
+            }
+            else
+            {
+                <input type="checkbox" name="isDuplex" value="true"/>
+            }
+            <label>Автоподача:</label>
+            @if (ViewBag.isFeeder)
+            {
+                <input type="checkbox" name="isFeeder" value="true" checked/>
+            }
+            else
+            {
+                <input type="checkbox" name="isFeeder" value="true"/>
+            }
+            <label>Auto:</label>
+            @if (ViewBag.isAuto)
+            {
+                <input type="checkbox" name="isAuto" value="true" checked/>
+                <br/>
+                <br/>
+            }
+            else
+            {
+                <input type="checkbox" name="isAuto" value="true"/>
+                <br/>
+                <br/>
+            }
+
+            <input type="submit" value="Сканировать"/>
+
+        </p>
+    }
+    else
+    {
+        <h3>Устройства для сканирования не найдены.</h3>
+    }
+
+
+    @* @if (ViewBag.Scanner.Count > 0) *@
+    @* { *@
+    @* <input type="submit" value="Сканировать"/> *@
+    @* } *@
+    @* else *@
+    @* { *@
+    @* <h3>Устройства для сканирования не найдены.</h3> *@
+    @* } *@
 </form>
