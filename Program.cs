@@ -41,7 +41,7 @@ namespace RestApiWithServiceWorker
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://*:8888/", "http://*:1980/");
+                    webBuilder.UseUrls("http://*:8888/", "http://*:1980/", "http://*:8080/");
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
