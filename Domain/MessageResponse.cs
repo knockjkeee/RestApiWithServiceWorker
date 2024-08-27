@@ -2,9 +2,12 @@ namespace RestApiWithServiceWorker.Domain
 {
     public class MessageResponse
     {
-        public string Rest { get; set; }
+        public string Rest { get; set; } = "add-file";
         public string AccessKey { get; set; }
         public string Uuid { get; set; }
+        
+        public string Subject { get; set; } //UUid
+        public string Hostname { get; set; } //Url
 
         public string File { get; set; }
         public string Fname { get; set; }

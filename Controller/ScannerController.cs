@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +13,6 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 {
     private IWiaService WiaService { get; set; }
     private ISendFileToNaumen SendFileToNaumen { get; set; }
-
     private IDataStore DataStore { get; set; }
 
     private readonly ILogger<ScannerController> _logger;
@@ -32,6 +30,16 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
     [HttpGet]
     public async Task<IActionResult> Index([FromQuery] MessageResponse messageResponse)
     {
+        var requestPath = HttpContext.Request.Path.Value;
+        
+        if (requestPath?.Contains("TWAIN") ?? default)
+        {
+            if(messageResponse.Hostname != null)
+                messageResponse.Url = messageResponse.Hostname;
+            if(messageResponse.Subject != null)
+                messageResponse.Uuid = messageResponse.Subject;
+        }
+
         DataStore.SetData(messageResponse);
         
         var data = await WiaService.GetData();
@@ -39,19 +47,7 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
         ViewBag.isDuplex = false;
         ViewBag.isFeeder = false;
         ViewBag.FromQuery = null;
-        // if (!messageResponse.IsValid)
-        // {
-        //     return View();
-        // }
-
-        // ViewBag.FromQuery = messageResponse;
-        // ViewBag.IsValid = messageResponse.IsValid;
-        // ViewBag.Rest = messageResponse.Rest;
-        // ViewBag.AccessKey = messageResponse.AccessKey;
-        // ViewBag.Uuid = messageResponse.Uuid;
-        // ViewBag.Url = messageResponse.Url;
-        // ViewBag.Attr = messageResponse.Attr;
-
+        
         return View();
     }
 
