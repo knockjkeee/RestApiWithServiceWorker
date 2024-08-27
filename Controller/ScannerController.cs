@@ -9,6 +9,7 @@ using RestApiWithServiceWorker.Service;
 namespace RestApiWithServiceWorker.Controller;
 
 [Route("")]
+[Route("/TWAIN@Web")]
 public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 {
     private IWiaService WiaService { get; set; }
