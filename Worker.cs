@@ -19,7 +19,6 @@ namespace WorkerService
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                //_logger.LogInformation("Worker running at: {time}, command: {string}", DateTimeOffset.Now, ApiCommand);
                 await Task.Delay(1000, stoppingToken);
             }
         }

@@ -1,11 +1,3 @@
-@* <h2>Count: @ViewBag.People.Count</h2> *@
-@* <ul> *@
-@*     @foreach (string person in ViewBag.People) *@
-@*     { *@
-@*         <li>@person</li> *@
-@*     } *@
-@* </ul> *@
-
 <h2>Сканирование документов в Naumen</h2>
 
 <form method="post">
@@ -52,32 +44,7 @@
                 <input type="checkbox" name="isFeeder" value="true"/>
             }
             <br/>
-            @* <label>Auto:</label> *@
-            @* @if (ViewBag.isAuto) *@
-            @* { *@
-            @*     <input type="checkbox" name="isAuto" value="true" checked/> *@
-            @*     <br/> *@
-            @*     <br/> *@
-            @* } *@
-            @* else *@
-            @* { *@
-            @*     <input type="checkbox" name="isAuto" value="true"/> *@
-            @*     <br/> *@
-            @*     <br/> *@
-            @* } *@
-
-            @* @if (ViewBag.FromQuery != null) *@
-            @* { *@
-            @*     <input type="hidden" id="IsValid" name="IsValid" value=@ViewBag.FromQuery.IsValid> *@
-            @*     <input type="hidden" id="Rest" name="Rest" value=@ViewBag.FromQuery.Rest> *@
-            @*     <input type="hidden" id="AccessKey" name="AccessKey" value=@ViewBag.FromQuery.AccessKey> *@
-            @*     <input type="hidden" id="Uuid" name="Uuid" value=@ViewBag.FromQuery.Uuid> *@
-            @*     <input type="hidden" id="Url" name="Url" value=@ViewBag.FromQuery.Url> *@
-            @*     <input type="hidden" id="Attr" name="Attr" value=@ViewBag.FromQuery.Attr> *@
-            @* } *@
-
             <input type="submit" value="Сканировать"/>
-
         </p>
     }
     else
