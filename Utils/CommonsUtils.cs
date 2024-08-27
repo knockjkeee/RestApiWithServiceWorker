@@ -47,7 +47,7 @@ namespace RestApiWithServiceWorker.Utils
             var urlToRequestNaumen = messageResponse.Url + "/services/rest/" + messageResponse.Rest + "/" + messageResponse.Uuid + "?accessKey=" + messageResponse.AccessKey;
             
             if (messageResponse.Attr.Length != 0)
-                urlToRequestNaumen += "?accessKey=" + messageResponse.AccessKey;
+                urlToRequestNaumen += "&attrCode=" + messageResponse.Attr;
             
             return urlToRequestNaumen;
         }

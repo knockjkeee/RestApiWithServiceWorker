@@ -11,14 +11,13 @@ using Microsoft.Extensions.Logging;
 using NAPS2.Wia;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
-using RestApiWithServiceWorker.Controller;
 
 namespace RestApiWithServiceWorker.Domain;
 
 public interface IWiaDevices
 {
     Task<List<string>> GetWiaDevices();
-    Task Scan(Scanner scanner);
+    Task<bool> Scan(Scanner scanner);
 }
 
 public class WiaDevice : IWiaDevices
@@ -28,6 +27,8 @@ public class WiaDevice : IWiaDevices
     [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")] 
     private Dictionary<Bitmap, string> data = new();
     private Scanner curScanner { get; set; }
+
+    private string CurFile { get; set; }
 
     public WiaDevice(ILogger<WiaDevice> logger)
     {
@@ -78,16 +79,23 @@ public class WiaDevice : IWiaDevices
     }
 
     [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")]
-    public async Task Scan(Scanner scanner)
+    public async Task<bool> Scan(Scanner scanner)
     {
         data.Clear();
+        CurFile = string.Empty;
+
+        if (scanner.isDebug)
+        {
+            scanner.File = "Debug.pdf";
+            return false;
+        }
         
         var curWIA = GetWiaDeviceByName(scanner.Name);
 
         if (curWIA == null)
         {
             _logger.LogError("Сканер не найден в списке WIA");
-            return;
+            return false;
         }
 
         scanner.Id = curWIA.Id();
@@ -118,13 +126,11 @@ public class WiaDevice : IWiaDevices
         if (transfer == null)
         {
             _logger.LogError("Ошибка в начале трансфера данных.");
-            return;
+            return false;
         }
 
         transfer.PageScanned += PageScanned;
         transfer.TransferComplete += TransferComplete;
-
-        // transfer.Download();
 
         try
         {
@@ -133,7 +139,11 @@ public class WiaDevice : IWiaDevices
         catch (Exception ex)
         {
             _logger.LogError("Ошибка в сканировании - {0}", ex);
+            return false;
         }
+
+        scanner.File = CurFile;
+        return true;
     }
 
 
@@ -175,23 +185,28 @@ public class WiaDevice : IWiaDevices
     {
         var format = curScanner.Format;
 
-        if (data.Count == 0) return;
-
-        if (data.Count == 1)
+        switch (data.Count)
         {
-            foreach (var kv in data)
+            case 0:
+                return;
+            case 1:
             {
-                var path = kv.Value;
-                var replace = Regex.Replace(path, "(_tempoScanner)\\d+", "");
-                if (File.Exists(replace))
-                    File.Delete(replace);
-                File.Move(path, replace);
+                foreach (var kv in data)
+                {
+                    var path = kv.Value;
+                    var replace = Regex.Replace(path, "(_tempoScanner)\\d+", "");
+                    var fName = replace.Split(Path.DirectorySeparatorChar).LastOrDefault();
+                    if (File.Exists(replace))
+                        File.Delete(replace);
+                    File.Move(path, replace);
+                    CurFile = fName;
+                }
+                return;
             }
-
-            return;
+            default:
+                SavePdf(format);
+                break;
         }
-
-        SavePdf(format);
     }
 
     [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")]
@@ -209,10 +224,13 @@ public class WiaDevice : IWiaDevices
             page.Close();
         }
 
-        var path = Path.Combine(Path.GetTempPath(), "naumen", DateTime.Now.Millisecond.ToString() , ".pdf");
+        var fName = Path.Combine("naumen", DateTime.Now.Millisecond.ToString(), ".pdf");
+
+        var path = Path.Combine(Path.GetTempPath(), fName);
         if (File.Exists(path))
             File.Delete(path);
         pdfDocument.Save(path);
+        CurFile = fName;
     }
 
 

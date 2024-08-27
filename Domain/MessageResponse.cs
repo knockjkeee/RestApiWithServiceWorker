@@ -12,12 +12,15 @@ namespace RestApiWithServiceWorker.Domain
 
         public string Attr { get; set; } = "";
 
+        public bool IsValid =>
+            !string.IsNullOrEmpty(Url) && !string.IsNullOrEmpty(Rest) && !string.IsNullOrEmpty(Uuid) &&
+            !string.IsNullOrEmpty(AccessKey);
+
+
         public override string ToString()
         {
-            return "Rest: " + Rest + " AccesKey: " + AccessKey + " uuid: " + Uuid + " File: " + File + " Fname: " + Fname + " url: " + Url + " Attr: " + Attr;
+            return
+                $"{nameof(Rest)}: {Rest}, {nameof(AccessKey)}: {AccessKey}, {nameof(Uuid)}: {Uuid}, {nameof(File)}: {File}, {nameof(Fname)}: {Fname}, {nameof(Url)}: {Url}, {nameof(Attr)}: {Attr}, {nameof(IsValid)}: {IsValid}";
         }
     }
-
-
-
 }

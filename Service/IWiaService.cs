@@ -7,8 +7,8 @@ namespace RestApiWithServiceWorker.Service;
 public interface IWiaService
 {
     Task<List<string>> GetData();
-
-    Task Scan(Scanner scanner);
+ 
+    Task<bool> Scan(Scanner scanner);
 }
 
 public class WiaService : IWiaService
@@ -26,8 +26,8 @@ public class WiaService : IWiaService
         return await WiaDevice.GetWiaDevices();
     }
 
-    public async Task Scan(Scanner scanner)
+    public async Task<bool> Scan(Scanner scanner)
     {
-        await WiaDevice.Scan(scanner);
+        return await WiaDevice.Scan(scanner);
     }
 }

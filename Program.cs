@@ -50,6 +50,7 @@ namespace RestApiWithServiceWorker
                     services.AddSingleton<IWiaService, WiaService>();
                     services.AddSingleton<ISendFileToNaumen, SendFileToNaumen>();
                     services.AddSingleton<IWiaDevices, WiaDevice>();
+                    services.AddSingleton<IDataStore, DataStore>();
                 })
                 .UseNLog()
                 .UseWindowsService();
