@@ -9,7 +9,7 @@ using RestApiWithServiceWorker.Utils;
 namespace RestApiWithServiceWorker.Controller
 {
     [ApiController]
-    [Route("")]
+    [Route("Scanner")]
     public class HandlesController : ControllerBase
     {
         private readonly ILogger<HandlesController> _logger;

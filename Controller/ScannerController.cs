@@ -8,7 +8,7 @@ using RestApiWithServiceWorker.Service;
 
 namespace RestApiWithServiceWorker.Controller;
 
-[Route("Scanner")]
+[Route("")]
 public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 {
     private IWiaService WiaService { get; set; }
