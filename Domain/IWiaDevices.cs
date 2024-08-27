@@ -68,7 +68,7 @@ public class WiaDevice : IWiaDevices
     {
         if (!WiaDevices.ContainsKey(name))
         {
-            _logger.LogInformation("Сканер не найден в словаре");
+            _logger.LogError("Сканер не найден в словаре");
             return null;
         }
 
@@ -81,6 +81,7 @@ public class WiaDevice : IWiaDevices
     [SuppressMessage("Interoperability", "CA1416:Проверка совместимости платформы")]
     public async Task<bool> Scan(Scanner scanner)
     {
+        _logger.LogInformation("Подготовка к сканированию...");
         data.Clear();
         CurFile = string.Empty;
 
@@ -143,6 +144,7 @@ public class WiaDevice : IWiaDevices
         }
 
         scanner.File = CurFile;
+        _logger.LogInformation("Сканирование завершено...");
         return true;
     }
 

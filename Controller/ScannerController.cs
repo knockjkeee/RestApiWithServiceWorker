@@ -59,7 +59,11 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
     public async Task<IActionResult> Index([FromForm] IndexDTO indexDto)
     {
         _logger.LogInformation(
-            $"Переданы следующие настройки - Scanner: {indexDto.Scanner}, format: {indexDto.Format}, isDuplex: {indexDto.IsDuplex}, isFeeder: {indexDto.IsFeeder}");
+            $"Переданы следующие настройки - " +
+            $"Scanner: {indexDto.Scanner}, " +
+            $"format: {indexDto.Format}, " +
+            $"isDuplex: {indexDto.IsDuplex}, " +
+            $"isFeeder: {indexDto.IsFeeder}");
 
         var sc = new Scanner()
         {
@@ -72,17 +76,17 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
         };
         DataStore.SetData(null);
 
-        var bRes = await WiaService.Scan(sc);
+        var bRes = sc.messageResponse.IsValid && await WiaService.Scan(sc);
 
         sc.messageResponse.File = sc.File;
         sc.messageResponse.Fname = sc.File;
         
         if(bRes)
-            bRes = sc.messageResponse.IsValid && await SendFileToNaumen.SendData(sc.messageResponse);
+            bRes = await SendFileToNaumen.SendData(sc.messageResponse);
         
         if(!bRes)
-            _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {0}", sc);
+            _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {sc}");
         
-        return Redirect("~/Scanner");
+        return Redirect("~/");
     }
 }

@@ -28,12 +28,9 @@ namespace RestApiWithServiceWorker.Utils
         {
             if (File.Exists(pathTempDir))
             {
-                using var fs = new FileStream(pathTempDir, FileMode.Open, FileAccess.Read);
-                using var br = new BinaryReader(fs);
-                var numBytes = new FileInfo(pathTempDir).Length;
-                var buff = br.ReadBytes((int)numBytes);
+                var res = File.ReadAllBytes(pathTempDir);
                 File.Delete(pathTempDir);
-                return buff;
+                return res;
             }
             else
             {
