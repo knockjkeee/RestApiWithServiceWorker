@@ -44,6 +44,8 @@ public class SendFileToNaumen : ISendFileToNaumen
     
     public async Task<bool> SendData(MessageResponse messageResponse)
     {
+        _logger.LogInformation("Подготовка к передачи в Naumen...");
+        
         var urlToRequestNaumen = commonsUtils.CreateUrl(messageResponse);
 
         var pathTempDir = Path.GetTempPath() + messageResponse.File; //todo new folder
@@ -59,6 +61,8 @@ public class SendFileToNaumen : ISendFileToNaumen
         var task = await commonsUtils.Upload(resultBuff, urlToRequestNaumen, messageResponse, pathTempDir);
         commonsUtils.PrintConsoleAndLogFile("Response Naumen:", task);
         commonsUtils.PrintLog(messageResponse, resultBuff);
+        
+        _logger.LogInformation("Передача в Naumen завершена...");
         return true;
     }
 }

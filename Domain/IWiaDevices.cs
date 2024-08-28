@@ -226,7 +226,7 @@ public class WiaDevice : IWiaDevices
             page.Close();
         }
 
-        var fName = Path.Combine("naumen", DateTime.Now.Millisecond.ToString(), ".pdf");
+        var fName = $"naumen{DateTime.Now.Millisecond.ToString()}.pdf";
 
         var path = Path.Combine(Path.GetTempPath(), fName);
         if (File.Exists(path))
