@@ -44,7 +44,8 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
             ? ""
             : HttpContext.Request.QueryString.Value;
         
-        DataStore.SetData(messageResponse);
+        DataStore.SetMR(messageResponse);
+        DataStore.SetSc(null);
 
         var data = await WiaService.GetData();
         ViewBag.Scanner = data ?? new List<string>() { };
@@ -72,22 +73,25 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
             isDuplex = indexDto.IsDuplex,
             IsFeeder = indexDto.IsFeeder,
             Format = indexDto.Format,
-            messageResponse = DataStore.GetData(),
+            messageResponse = DataStore.GetMR(),
             isDebug = string.IsNullOrEmpty(indexDto.Scanner)
         };
-        DataStore.SetData(null);
+        
+        DataStore.SetSc(sc);
+        DataStore.SetMR(null);
 
-        var bRes = sc.messageResponse.IsValid && await WiaService.Scan(sc);
+        // var bRes = sc.messageResponse.IsValid && await WiaService.Scan(sc);
+        //
+        // sc.messageResponse.File = sc.File;
+        // sc.messageResponse.Fname = sc.File;
+        //
+        // if (bRes)
+        //     bRes = await SendFileToNaumen.SendData(sc.messageResponse);
+        //
+        // if (!bRes)
+        //     _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {sc}");
 
-        sc.messageResponse.File = sc.File;
-        sc.messageResponse.Fname = sc.File;
-
-        if (bRes)
-            bRes = await SendFileToNaumen.SendData(sc.messageResponse);
-
-        if (!bRes)
-            _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {sc}");
-
-        return Redirect($"~/{sc.messageResponse.QueryString}");
+        // return Redirect($"~/{sc.messageResponse.QueryString}");
+        return Redirect($"~/Process");
     }
 }

@@ -4,22 +4,40 @@ namespace RestApiWithServiceWorker.Service;
 
 public interface IDataStore
 {
-    void SetData(MessageResponse data);
-    MessageResponse GetData();
-    
+    void SetMR(MessageResponse data);
+    MessageResponse GetMR();
+
+    void SetSc(Scanner sc);
+
+    Scanner GetSc();
+
 }
 
 public class DataStore : IDataStore
 {
     private MessageResponse Data { get; set; }
-    
-    public void SetData(MessageResponse data)
+
+    private Scanner Scanner { get; set; }
+
+    public void SetMR(MessageResponse data)
     {
         Data = data;
     }
 
-    public MessageResponse GetData()
+    public MessageResponse GetMR()
     {
         return Data;
     }
+    
+    
+    public void SetSc(Scanner sc)
+    {
+        Scanner = sc;
+    }
+
+    public Scanner GetSc()
+    {
+        return Scanner;
+    }
+    
 }
