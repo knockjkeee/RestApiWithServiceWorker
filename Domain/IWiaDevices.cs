@@ -173,7 +173,9 @@ public class WiaDevice : IWiaDevices
                 var random = new Random();
                 var path = Path.Combine(Path.GetTempPath(),
                     "naumen" + (int)DateTime.Now.TimeOfDay.TotalMilliseconds + "_tempoScanner" + random.Next(2, 1000) + imageExtension);
-
+                
+                _logger.LogInformation($"Сохранение файла - {path}");
+                
                 bitmap.Save(path, format);
                 data?.Add(bitmap, path);
             }
@@ -207,6 +209,7 @@ public class WiaDevice : IWiaDevices
                     var fName = replace.Split(Path.DirectorySeparatorChar).LastOrDefault();
                     if (File.Exists(replace))
                         File.Delete(replace);
+                    _logger.LogInformation($"Сохранение файла - {replace}");
                     File.Move(path, replace);
                     CurFile = fName;
                 }
@@ -238,6 +241,7 @@ public class WiaDevice : IWiaDevices
         var path = Path.Combine(Path.GetTempPath(), fName);
         if (File.Exists(path))
             File.Delete(path);
+        _logger.LogInformation($"Сохранение файла - {path}");
         pdfDocument.Save(path);
         CurFile = fName;
     }
