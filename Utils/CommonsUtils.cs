@@ -29,7 +29,7 @@ namespace RestApiWithServiceWorker.Utils
             if (File.Exists(pathTempDir))
             {
                 var res = File.ReadAllBytes(pathTempDir);
-                File.Delete(pathTempDir);
+                // File.Delete(pathTempDir);
                 return res;
             }
             else

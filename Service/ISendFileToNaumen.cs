@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -58,7 +59,20 @@ public class SendFileToNaumen : ISendFileToNaumen
             return false;
         }
 
-        var task = await commonsUtils.Upload(resultBuff, urlToRequestNaumen, messageResponse, pathTempDir);
+        string task;
+        
+        try
+        {
+            task = await commonsUtils.Upload(resultBuff, urlToRequestNaumen, messageResponse, pathTempDir);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError($"Ошибка в передаче данных в Naumen - {e}");
+            return false;
+        }
+        
+        File.Delete(pathTempDir);
+        
         commonsUtils.PrintConsoleAndLogFile("Response Naumen:", task);
         commonsUtils.PrintLog(messageResponse, resultBuff);
         

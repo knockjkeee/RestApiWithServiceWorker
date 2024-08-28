@@ -145,6 +145,7 @@ public class WiaDevice : IWiaDevices
 
         scanner.File = CurFile;
         _logger.LogInformation("Сканирование завершено...");
+        await ClearDir();
         return true;
     }
 
@@ -165,8 +166,9 @@ public class WiaDevice : IWiaDevices
             {
                 var bitmap = new Bitmap(e.Stream);
 
-                var format = ImageFormat.Jpeg;
-                var imageExtension = $".{curScanner.Format}";
+                var format = curScanner.Format.Equals("jpeg") ? ImageFormat.Jpeg: ImageFormat.Png;
+                var ext = curScanner.Format.Equals("jpeg") ? "jpeg" : "png";
+                var imageExtension = $".{ext}";
 
                 var random = new Random();
                 var path = Path.Combine(Path.GetTempPath(),
@@ -193,6 +195,11 @@ public class WiaDevice : IWiaDevices
                 return;
             case 1:
             {
+                if (format.Equals("pdf"))
+                {
+                    SavePdf(format);
+                    return;
+                }
                 foreach (var kv in data)
                 {
                     var path = kv.Value;
