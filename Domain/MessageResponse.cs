@@ -15,6 +15,8 @@ namespace RestApiWithServiceWorker.Domain
 
         public string Attr { get; set; } = "";
 
+        public string QueryString { get; set; }
+
         public bool IsValid =>
             !string.IsNullOrEmpty(Url) && !string.IsNullOrEmpty(Rest) && !string.IsNullOrEmpty(Uuid) &&
             !string.IsNullOrEmpty(AccessKey);

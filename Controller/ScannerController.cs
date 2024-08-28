@@ -31,23 +31,27 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
     public async Task<IActionResult> Index([FromQuery] MessageResponse messageResponse)
     {
         var requestPath = HttpContext.Request.Path.Value;
-        
+
         if (requestPath?.Contains("TWAIN") ?? default)
         {
-            if(messageResponse.Hostname != null)
+            if (messageResponse.Hostname != null)
                 messageResponse.Url = messageResponse.Hostname;
-            if(messageResponse.Subject != null)
+            if (messageResponse.Subject != null)
                 messageResponse.Uuid = messageResponse.Subject;
         }
 
-        DataStore.SetData(messageResponse);
+        messageResponse.QueryString = string.IsNullOrEmpty(HttpContext.Request.QueryString.Value)
+            ? ""
+            : HttpContext.Request.QueryString.Value;
         
+        DataStore.SetData(messageResponse);
+
         var data = await WiaService.GetData();
         ViewBag.Scanner = data ?? new List<string>() { };
         ViewBag.isDuplex = false;
         ViewBag.isFeeder = false;
         ViewBag.FromQuery = null;
-        
+
         return View();
     }
 
@@ -77,13 +81,13 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 
         sc.messageResponse.File = sc.File;
         sc.messageResponse.Fname = sc.File;
-        
-        if(bRes)
+
+        if (bRes)
             bRes = await SendFileToNaumen.SendData(sc.messageResponse);
-        
-        if(!bRes)
+
+        if (!bRes)
             _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {sc}");
-        
-        return Redirect("~/");
+
+        return Redirect($"~/{sc.messageResponse.QueryString}");
     }
 }
