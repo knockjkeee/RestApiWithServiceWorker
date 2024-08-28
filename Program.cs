@@ -36,7 +36,6 @@ namespace RestApiWithServiceWorker
                 {
                     logging.ClearProviders();
                     logging.SetMinimumLevel(LogLevel.Trace);
-                    // logging.AddConsole();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
@@ -56,4 +55,3 @@ namespace RestApiWithServiceWorker
                 .UseWindowsService();
     }
 }
-

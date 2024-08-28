@@ -1,5 +1,8 @@
 <h2>Процесс сканирования начался....</h2>
 
-@{Context.Response.Redirect("~/Load");}
 
-
+<script>
+    setTimeout(function (){
+        window.location.replace('@Url.Action("Index", "Load")')
+    },4000)
+</script>

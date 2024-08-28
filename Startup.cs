@@ -12,34 +12,28 @@ namespace RestApiWithServiceWorker
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            // var builder = new ConfigurationBuilder().AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "Properties", "launchSettings.json"));
-            // Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            // services.AddSingleton<IConfiguration>(Configuration);
             services.AddCors(options =>
-                        {
-                            options.AddPolicy("innerPolicy",
-                            builder =>
-                            {
-                                builder
-                                .AllowAnyOrigin()
-                                .AllowAnyMethod()
-                                .AllowAnyHeader();
-                            });
-                        });
+            {
+                options.AddPolicy("innerPolicy",
+                    builder =>
+                    {
+                        builder
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
 
             services.AddControllers();
             services.AddHealthChecks().AddCheck<HealthCheckService>("health_check");
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -63,11 +57,7 @@ namespace RestApiWithServiceWorker
 
             app.UseHealthChecks("/status");
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
-

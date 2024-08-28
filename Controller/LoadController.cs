@@ -1,8 +1,6 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using RestApiWithServiceWorker.Domain;
 using RestApiWithServiceWorker.Service;
 
 namespace RestApiWithServiceWorker.Controller;
@@ -29,6 +27,8 @@ public class LoadController : Microsoft.AspNetCore.Mvc.Controller
     public async Task<IActionResult> Index()
     {
         var sc = DataStore.GetSc();
+        
+        DataStore.SetMR(null);
 
         var bRes = sc.messageResponse.IsValid && await WiaService.Scan(sc);
 

@@ -58,7 +58,7 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
 
 
     [HttpPost]
-    public async Task<IActionResult> Index([FromForm] IndexDTO indexDto)
+    public IActionResult Index([FromForm] IndexDTO indexDto)
     {
         _logger.LogInformation(
             $"Переданы следующие настройки - " +
@@ -78,20 +78,6 @@ public class ScannerController : Microsoft.AspNetCore.Mvc.Controller
         };
         
         DataStore.SetSc(sc);
-        DataStore.SetMR(null);
-
-        // var bRes = sc.messageResponse.IsValid && await WiaService.Scan(sc);
-        //
-        // sc.messageResponse.File = sc.File;
-        // sc.messageResponse.Fname = sc.File;
-        //
-        // if (bRes)
-        //     bRes = await SendFileToNaumen.SendData(sc.messageResponse);
-        //
-        // if (!bRes)
-        //     _logger.LogError($"Ошибка в передаче данных в Naumen,  sc - {sc}");
-
-        // return Redirect($"~/{sc.messageResponse.QueryString}");
         return Redirect($"~/Process");
     }
 }

@@ -29,7 +29,6 @@ namespace RestApiWithServiceWorker.Utils
             if (File.Exists(pathTempDir))
             {
                 var res = File.ReadAllBytes(pathTempDir);
-                // File.Delete(pathTempDir);
                 return res;
             }
             else
@@ -41,11 +40,12 @@ namespace RestApiWithServiceWorker.Utils
 
         public string CreateUrl(MessageResponse messageResponse)
         {
-            var urlToRequestNaumen = messageResponse.Url + "/services/rest/" + messageResponse.Rest + "/" + messageResponse.Uuid + "?accessKey=" + messageResponse.AccessKey;
-            
+            var urlToRequestNaumen = messageResponse.Url + "/services/rest/" + messageResponse.Rest + "/" +
+                                     messageResponse.Uuid + "?accessKey=" + messageResponse.AccessKey;
+
             if (messageResponse.Attr.Length != 0)
                 urlToRequestNaumen += "&attrCode=" + messageResponse.Attr;
-            
+
             return urlToRequestNaumen;
         }
 
